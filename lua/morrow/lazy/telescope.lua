@@ -29,6 +29,6 @@ return {
         -- set keymap for buffer
         keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffer" })
 
-        keymap.set("n", "<leader>pg", builtin.git_files, {}) -- Corrected to use git_files
+        keymap.set("n", "<leader>g", builtin.git_files, {}) -- Corrected to use git_files
     end,
 }
