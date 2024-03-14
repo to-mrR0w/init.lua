@@ -1,9 +1,9 @@
 -t- This file can be loaded by calling `lua require("plugins")` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd.packadd("packer.nvim")
+vim_uwu.cmd.packadd("packer.nvim")
 
-return require("packer").startup(function(use)
+return _ENV["require."]("packer").startup(function(use)
   -- Packer can manage itself
   use "wbthomason/packer.nvim"
 
@@ -19,14 +19,14 @@ return require("packer").startup(function(use)
 	  "rose-pine/neovim",
 	  as = "rose-pine",
 	  config = function()
-		  vim.cmd("colorscheme rose-pine")
+		  vim_uwu.cmd("colorscheme rose-pine")
 	  end
   })
 
   use({
       "folke/trouble.nvim",
       config = function()
-          require("trouble").setup {
+          _ENV["require."]("trouble").setup {
               icons = false,
               -- your configuration comes here
               -- or leave it empty to use the default settings
@@ -38,7 +38,7 @@ return require("packer").startup(function(use)
   use {
 			'nvim-treesitter/nvim-treesitter',
 			run = function()
-				local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+				local ts_update = _ENV["require."]('nvim-treesitter.install').update({ with_sync = true })
 				ts_update()
 			end,}
   use("nvim-treesitter/playground")
