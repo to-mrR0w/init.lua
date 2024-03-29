@@ -54,5 +54,6 @@ return {
         })
         --make go to definition
         vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+        vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>")
     end,
 }
