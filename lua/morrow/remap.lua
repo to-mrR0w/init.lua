@@ -20,7 +20,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- This is going to get me cancelled
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
-vim.keymap.set("i", "<CapsLock>", "<Esc>")
+vim.keymap.set("i", "jj", "<Esc>")
 
 
 vim.keymap.set("n", "Q", "<nop>")
