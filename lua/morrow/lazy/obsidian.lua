@@ -23,12 +23,8 @@ return {
                 path = "~/school/Obsidian",
             },
         },
-
-        -- see below for full list of options 👇
         completion = {
-            -- Set to false to disable completion.
             nvim_cmp = true,
-            -- Trigger completion at 2 chars.
             min_chars = 2,
         },
         preferred_link_style = "wiki",
